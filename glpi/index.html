@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>GLPI - PROJETO GLPI</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "GLPI";
+        var mkdocs_page_input_path = "glpi.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> PROJETO GLPI
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">Sobre</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../intro/">Introdução</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">GLPI</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#preparando-os-pre-requisitos">Preparando os pré-requisitos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#baixando-e-instalando-o-pacote-do-glpi">Baixando e instalando o pacote do Glpi</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configucao-web-browser">Configução Web (Browser)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#conexao-com-o-banco-de-dados">Conexão com o Banco de dados</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#utilizando-o-glpi">Utilizando o GLPI</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#sessoes-do-sistema">Sessões do Sistema</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#ativos">Ativos</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#assitencia">Assitência</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#gerencia">Gerência</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#ferramentas">Ferramentas</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#administracao">Administração</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#configurar">Configurar</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../mkdocs/">MkDocs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../conclusao/">Conclusão</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">PROJETO GLPI</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">GLPI</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><img alt="" src="https://www.ambientelivre.com.br/media/k2/items/cache/3f4808b525a42a0bb340252b3c0de1d3_XL.jpg" /></p>
+<p>O <a href="https://glpi-project.org/pt-br/">Glpi</a> (sigla em francês: <em><strong>Gestionnaire Libre de Parc Informatique</strong></em>, ou "Gestor de Equipamentos de TI de Código Aberto", em português) é um sistema de código aberto para Gerenciamento de Ativos de TI, rastreamento de problema e central de serviços. É escrito em PHP e distribuído sob a GNU General Public License.</p>
+<p>Este guia tem como objetivo fornecer uma visão geral do GLPI para administradores e usuários, contendo o processo de instalação e configuração, bem como demonstração básica do serviço.</p>
+<h1 id="instalando-o-glpi">Instalando o GLPI</h1>
+<p>Abordaremos o processo de instalação apartir da perspectiva da utilização de uma máquina servidora com sistema operacional linux. Os dados detalhados do servidor utilizados podem ser conferidos em <a href="../about/">Sobre</a>.</p>
+<h2 id="preparando-os-pre-requisitos">Preparando os pré-requisitos</h2>
+<p>Para instalação do Glpi precisaremos instalar os serviços necessários como, Apache, php, banco de dados etc. Aqui utilizaremos a instação em lote para os serviços contidos no código abaixo:</p>
+<pre><code>sudo apt update &amp;&amp; apt install apache2 php libapache2-mod-php php-mysql php-curl php-gd php-intl php-ldap php-apcu php-xml php-zip php-imap php-mbstring mariadb-server mariadb-client
+</code></pre>
+<p><img alt="01 Comandos PréRequisitos.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/01%20Comandos%20Pr%C3%A9Requisitos.png?raw=true" />
+<img alt="03 professor 2.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/03%20professo%202.png?raw=true" /></p>
+<p>Após a instalação dos pacotes necessários partiremos para a configuração do Banco de dados para o Glpi.
+Usaremos o comando <code>mysql_secure_installation</code> onde podemos configurar alguns parametros para nosso gerenciador de banco de dados (mysql).</p>
+<p><img alt="04 configuração do bd mysql_secure_installation.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/04%20configuracao%20do%20bd%20mysql_secure_installation.png?raw=true" /></p>
+<p>Após podemos criar nosso banco de dados e configurá-lo com usuários e senha, bem como as permissões para o mesmo. Usamos o comando <code>mysql -u root -p</code> para acessarmos no cliente do banco de dados (MariaDB), e podemos proceder como abaixo.</p>
+<p><img alt="05 criação do banco e usuário.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/05%20criacao%20do%20banco%20e%20usuario.png?raw=true" />
+<img alt="06 configuração de privilégios.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/06%20configuracao%20de%20privilegios.png?raw=true" /></p>
+<h2 id="baixando-e-instalando-o-pacote-do-glpi">Baixando e instalando o pacote do Glpi</h2>
+<p>Antes de iniciarmos o download do pacote acessaremos o diretório onde ficaram alocados os arquivos do Glpi, no nosso caso utilizaremos o diretório <strong><em>/var/www/html/</em></strong>, </p>
+<p>Após acessarmos o diretório procederemos com o download do pacote</p>
+<pre><code>wget https://github.com/glpi-project/glpi/releases/download/10.0.15/glpi-10.0.15.tgz
+</code></pre>
+<blockquote>
+<p>Link disponível no repositório ofical no GitHub: https://github.com/glpi-project/glpi/releases</p>
+</blockquote>
+<p><img alt="08 baixando o glpi do github.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/08%20baixando%20o%20glpi%20do%20github.png?raw=true" /></p>
+<p>Descompacte os arquivos baixados <code>tar -xzvf tar -xzvf glpi-10.0.15.tgz</code></p>
+<p><img alt="09 desconpactando.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/09%20desconpactando.png?raw=true" /></p>
+<p>Modificaremos a configuração do diretório para diretório web e também suas permissões:</p>
+<pre><code>chown www-data:www-data glpi
+chown www-data:www-data glpi/*
+chmod -R 755 glpi
+</code></pre>
+<p><img alt="11 mudando as leis na pasta gpli.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/11%20mudando%20permiss%C3%B5es%20na%20pasta%20gpli.png?raw=true" /></p>
+<p>Assim concluímos a primeira parte da instalão do sistema, passando agora para as configurações via navegador.</p>
+<h2 id="configucao-web-browser">Configução Web (Browser)</h2>
+<p>Abriremos o nosso navegador e informaresmo o endreço ip da máquina onde o sistema está hospedado no nosso caso <strong>192.168.0.115/glpi</strong>, e então será apresentada a tela abaixo:</p>
+<p><img alt="12 Tela inicial do navegador.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/12%20Tela%20inicial%20browser.png?raw=true" /></p>
+<p>Avançaremos e aceitaremos os termos continuando com a isntalação</p>
+<p><img alt="12 termos.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/12%20termos.png?raw=true" /></p>
+<p>Na tela abaixo, temos um resumo da verificação da compatibilidade do ambiente para a execução do glpi. Nela temos alguns itens obrigatórios que devem está devidamente configurados para que a instação possa prosseguir; caso haja algo pendente será dada a informação, aqui prosseguiremos visto não haver nenhum item impedindo a continuidade do processo:</p>
+<p><img alt="14 verificação de ambiente 1.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/14%20%20verifica%C3%A7%C3%A3o%20de%20ambiente%201.png?raw=true" /><img alt="14 verificação de ambiente 2.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/14%20%20verifica%C3%A7%C3%A3o%20de%20ambiente%202.png?raw=true" /></p>
+<h3 id="conexao-com-o-banco-de-dados">Conexão com o Banco de dados</h3>
+<p>A seguir necessitaremos efetuar a conexão com o banco de dados, informando as credenciais de acesso configuradas anteriormente.</p>
+<p><img alt="" src="https://blog.remontti.com.br/wp-content/uploads/2016/09/GLPI_DEBIAN_5.png" /></p>
+<p>Após a conexão, podemos criar um banco de dados novo, ou utilizarmos um já existente. Aqui utilizaremos o banco glpi, criado anteriormente via terminal.</p>
+<p><img alt="15 coenxão bd.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/15%20coenx%C3%A3o%20bd.png?raw=true" /><img alt="16 conslusão da conexão .png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/16%20conslus%C3%A3o%20da%20conex%C3%A3o%20.png?raw=true" /></p>
+<h2 id="utilizando-o-glpi">Utilizando o GLPI</h2>
+<p>Ao concluir toda a parte de configuração, podemos então utilizarmos o sistema. Será apresentada uma tela de login, onde informaremos o usuário e senha.</p>
+<p><img alt="17 login no sistema.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/17%20login%20no%20sistema.png?raw=true" /></p>
+<blockquote>
+<p>Aqui utilizamos o usuário e senha padrão de Glpi: "glpi" em ambos os campos.</p>
+</blockquote>
+<p>Ao conluirmos nosso acesso, temos o sistema disponível para o inicio das operações</p>
+<p><img alt="18 tela inicial glpo.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/18%20tela%20inicial%20glpo.png?raw=true" /></p>
+<h3 id="sessoes-do-sistema">Sessões do Sistema</h3>
+<p>Ao acessar o sistema nos deparamos com a tela inicial </p>
+<p><img alt="" src="https://glpi-user-documentation.readthedocs.io/fr/latest/_images/main-ui.png" /></p>
+<ol>
+<li>O menu do usuário permite que você gerencie suas preferências, acesse a ajuda, altere o idioma atual, altere seu perfil e entidade atuais e desconecte-se.</li>
+<li>O menu principal permite que você navegue pelos diferentes módulos.</li>
+<li>A trilha de navegação permite que você localize o contexto de uso da área de trabalho principal.</li>
+<li>A área de trabalho principal é o espaço privilegiado para interação com o aplicativo. </li>
+<li>A caixa de pesquisa permite que você faça uma pesquisa global a qualquer momento.</li>
+</ol>
+<h4 id="ativos">Ativos</h4>
+<p>O módulo de Ativos é usado para gerenciar todos os ativos que fazem parte da sua infraestrutura de TI. Para gerenciar hardwares e softwares de uma infraestrutura de TI, o GLPI permite listar nativamente todos os ativos que são utilizados dentro da organização gerenciada.</p>
+<p><img alt="27 ativos.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/27%20ativos.png?raw=true" /></p>
+<h4 id="assitencia">Assitência</h4>
+<p>O módulo de assistência permite que os usuários criem, acompanhem e processem tickets. Planejamentos, estatísticas e tickets recorrentes também estão disponíveis.
+Dependendo das permissões do perfil, também é possível criar, acompanhar e processar problemas e alterações.</p>
+<p><img alt="28 ASSITENCIA.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/28%20ASSITENCIA.png?raw=true" /></p>
+<h4 id="gerencia">Gerência</h4>
+<p>O módulo de Gerêncai permite adentra em uma gestão financeira:  astreie suas despesas, contratos e fornecedores, crie novos objetos de estoque, gerencie banco de dados de usuários e faça relatórios.</p>
+<p><img alt="29 GENRENCIA.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/29%20GENRENCIA.png?raw=true" /></p>
+<h4 id="ferramentas">Ferramentas</h4>
+<p>Através da sessão Ferramentas é possível Gerenciar projetos com GLPI: atribuir tarefas, adicionar colaboradores, definir prazos. Crie relatórios e explore os quadros Kanban para organizar sua equipe! Crie relatórios e explore quadros Kanban para organizar sua equipe! </p>
+<p>Uma das funcionalidade qeu encontramos aqui que se torna bastante poderosa e últil a funcionalidade da criação de um sistema de FAQ (Frequently Asked Questions Em português seria algo como "Perguntas frequentes"), através da opção Base de conhecimento.</p>
+<p><img alt="30 FERRAMENTEAS.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/30%20FERRAMENTEAS.png?raw=true" /></p>
+<h4 id="administracao">Administração</h4>
+<p>Aqui você pode gereniciar  o controle dos usuários: defina entidades, crie perfis e restrinja o acesso às informações. Com as regras do GLPI, você pode definir as funções de cada membro do diretório e configurar o fluxo de trabalho para Helpdesk e Inventário. </p>
+<p><img alt="31 ADMINISTRAÇÃO.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/31%20ADMINISTRA%C3%87%C3%83O.png?raw=true" /></p>
+<h4 id="configurar">Configurar</h4>
+<p>Personalize o GLPI: explore os recursos de configuração para adicionar o logotipo de seus farelos, selecione a paleta de cores e configure os plug-ins. Nesta seção, você também pode gerenciar SLAs e notificações. </p>
+<p><img alt="32 CONFIGURAR.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Glpi/imagens/32%20CONFIGURAR.png?raw=true" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../intro/" class="btn btn-neutral float-left" title="Introdução"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mkdocs/" class="btn btn-neutral float-right" title="MkDocs">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../intro/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../mkdocs/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>MkDocs - PROJETO GLPI</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "MkDocs";
+        var mkdocs_page_input_path = "mkdocs.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> PROJETO GLPI
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">Sobre</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../intro/">Introdução</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../glpi/">GLPI</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">MkDocs</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../conclusao/">Conclusão</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">PROJETO GLPI</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">MkDocs</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><img src="https://dashboard.snapcraft.io/site_media/appmedia/2019/12/61556938-3c337400-aa63-11e9-9ec1-a3ba5643a1a6.png" width=60% ></p>
+<p>&nbsp;</p>
+<p>O MkDocs é um gerador de site estático <strong>rápido</strong> , <strong>simples</strong> e <strong>absolutamente lindo</strong> , voltado para a construção de documentação de projetos. Os arquivos de origem da documentação são escritos em Markdown e configurados com um único arquivo de configuração YAML. Ele foi projetado para ser fácil de usar e pode ser estendido com temas de terceiros, plugins e extensões Markdown.</p>
+<h2 id="instalando-o-mkdocs">Instalando o MkDocs</h2>
+<p>Aqui no nosso projeto começaremos inslando além do MkDocs, alguns pacotes extras de temas para o mesmo; utilizaremos o comando <code>apt isntall mkdocs mkdocs-material mkdocs-bootstrap mkdocs-nature</code>, e aguardaremos a conclusão da instalação.</p>
+<p><img alt="1 comando mkdocs .png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Mkdocs/imagens/1%20comando%20mkdocs%20.png?raw=true" /><img alt="02.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Mkdocs/imagens/02.png?raw=true" /></p>
+<p>Após a conlusão seguiremos criando um novo projeto de site par o MkDocs utilizaremos a instrução (aqui utilizaremos o nome glpi-project): <code>mkdocs new glpi-project</code> </p>
+<p>Será criado o diretório com um arquivo <code>mkdocs.yml</code> e um subdiretório <strong>docs</strong> com um arquivo <code>index.md</code> dentro. Agora podemos efetuar as configurações de acordo com o desejado para o nosso projeto.</p>
+<p><img alt="04 - criação do site.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Mkdocs/imagens/04%20-%20cria%C3%A7%C3%A3o%20do%20site.png?raw=true" /></p>
+<h2 id="configurando-o-site">Configurando o Site</h2>
+<p>Acessaremos o diretório do nosso site que aqui chamamos de <strong>glp-project</strong>: <code>cd glp-project</code>. Dentro do diretório começaremos editando o arquivo <code>mkdocs.yml</code>. Esse arquivo contem a configuração da estrutura do nosso site, nele dfiniremos o menu da nossa ducumentação, temas e outras paramêtros.
+Abra o editor através do coamdno <code>nano mkdocs.yml</code>. Aqui editamos o nosso layout como na imagem</p>
+<p><img alt="04 edição do mkdocs yml.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Mkdocs/imagens/04%20edi%C3%A3o%20do%20mkdocs%20yml.png?raw=true" /></p>
+<p>Após a edição podemos testar nosso site no navegador. Para isso é necessário inicar o serviço do mkdocs com o endereço para acesso, em nosso caso utilizaremos o ip 192.168.0.91:5000. No terminal execute o comando <code>mkdocs serve -a 192.168.0.91:5000</code>, e após abriremos nosso site no navegador. </p>
+<p><img alt="06 testando o site via terminal.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Mkdocs/imagens/06%20testando%20o%20site%20via%20terminal.png?raw=true" /></p>
+<p>Abaixo temo o resultado:</p>
+<p><img alt="Captura de tela 2024-07-02 020234.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Mkdocs/imagens/Captura%20de%20tela%202024-07-02%20020234.png?raw=true" /></p>
+<p>Agora para podermos fornecer as informações para cada menu, é necessário criarmos os arquivos de extensão .md (extenção padrão do Markdown), os quais serão editados com o conteúdo a ser carregado para o site.</p>
+<p>Para nosso exemplo partimos a partir do arquivo index.md, localizado na pasta docs, utilizamos o comando <code>cp index.md</code> acompanhando do nome do novo arquivo a ser criado conforme verificado abaixo:</p>
+<p><img alt="09 gerando os arquivos .md das sesscos .png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Mkdocs/imagens/09%20gerando%20os%20arquivos%20.md%20das%20sesscos%20.png?raw=true" /></p>
+<p>Após a criação dos mesmo, basta editá-los criando o conteúdo em sintaxe Markdown para ser carregado ao site.
+Como como meio a falitar nosso processo produtivo, preferimos utilizar aqui a ferramenta <a href="https://stackedit.io/app#">SatckEdit</a>; que consiste em um editor em sintaxe Markdown com previsualização do resultado da ediação. Após a construção dos textos no <a href="https://stackedit.io/app#">StackEdit</a> foi realizada a edição final dos arquivos .md no diretório criado no servidor onde os serviços estão configurados.</p>
+<p><img alt="11 stackedit home.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Mkdocs/imagens/11%20stackedit%20home.png?raw=true" /><img alt="16 nano home.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Mkdocs/imagens/16%20nano%20home.png?raw=true" /></p>
+<p>O mesmo processo das imagens acima foi repetido para todos os outros arquivos integrantes da documentação.</p>
+<h2 id="execultando-o-build-do-site">Execultando o Build do Site</h2>
+<p>Após a finalização do preocesso criativo podemo efetuar o comando de build do site, assim criaremos um edereço estático acessível apartir do servidor web, que nosso caso é o Apache.</p>
+<p>Para efetuarmos esta tarefa utilizaremos o comando <code>mkdocs build</code>, o processo criará uma pasta por nome <code>site</code> a qual copiaremos para o diretório <code>/var/www/html/</code> utilizando o comando <code>cp -R site /var/www/html</code>, assim concluiremos a criação do nosso site de documentação.</p>
+<p><img alt="24 cp site.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Mkdocs/imagens/24%20cp%20site.png?raw=true" /></p>
+<p>Ao final conseguiremos acessar nossa página de documentação pleo endreço http://192.168.0.91/site/</p>
+<p><img alt="tela final.png" src="https://github.com/Romaildo-sn/GLPI-MKDOCS/blob/main/Mkdocs/imagens/tela%20final.png?raw=true" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../glpi/" class="btn btn-neutral float-left" title="GLPI"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../conclusao/" class="btn btn-neutral float-right" title="Conclusão">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../glpi/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../conclusao/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
